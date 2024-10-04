@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inscripción de Equipos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Inscripción de Equipos</h1>
+        <form id="inscripcionForm">
+            <label for="teamName">Nombre del Equipo:</label>
+            <input type="text" id="teamName" required>
+            <button type="submit">Inscribir Equipo</button>
+        </form>
+
+        <h2>Total Recaudado: <span id="totalCollected">0</span> gs</h2>
+        <h2>Equipo Ganador: <span id="winningTeam">N/A</span></h2>
+
+        <table id="teamList">
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Costo de Inscripción</th>
+                    <th>Goles</th>
+                    <th>Tarjetas Amarillas</th>
+                    <th>Tarjetas Rojas</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Equipos serán añadidos aquí -->
+            </tbody>
+        </table>
+
+        <button id="downloadPDF" style="background-color: green; color: white;">Descargar PDF de Equipos</button>
+        <button id="downloadGoalsPDF" style="background-color: green; color: white;">Descargar PDF de Goles</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
